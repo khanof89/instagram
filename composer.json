@@ -1,9 +1,12 @@
 {
     "name": "shahrukhkhan/instagram",
     "description": "This package provides you easy way to communicate with instagram api",
+    "keywords": ["instagram", "instagram wrapper", "laravel instagram wrapper", "instagram api wrapper"],
+    "license": "MIT",
     "type": "library",
     "require": {
-        "guzzle/http": "^3.9"
+        "guzzle/http": "^3.9",
+	"php": ">=7.0"
     },
     "authors": [
         {

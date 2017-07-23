@@ -35,6 +35,14 @@ class Instagram
     {
         $clientId    = env('INSTAGRAM_CLIENT_ID');
         $redirectUri = env('INSTAGRAM_REDIRECT_URI');
+	if(!$clientId)
+        {
+            die('Client id not found');
+        }
+        if(!$redirectUri)
+        {
+            die('Redirect URI not found');
+        }
         $url         = self::$authUrl . '?client_id=' . $clientId . '&redirect_uri=' . $redirectUri . '&response_type=code&scope=follower_list';
 
         return $url;
