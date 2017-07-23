@@ -1,11 +1,7 @@
-<?php namespace Shahrukh\Instagram;
+<?php
 
-/**
- * Created by PhpStorm.
- * User: shahrukhkhan
- * Date: 16/07/17
- * Time: 3:17 PM
- */
+namespace Shahrukh\Instagram;
+
 class Instagram
 {
     /**
@@ -35,17 +31,15 @@ class Instagram
     {
         $clientId    = env('INSTAGRAM_CLIENT_ID');
         $redirectUri = env('INSTAGRAM_REDIRECT_URI');
-	if(!$clientId)
-        {
+        if (!$clientId) {
             die('Client id not found');
         }
-        if(!$redirectUri)
-        {
+
+        if(!$redirectUri) {
             die('Redirect URI not found');
         }
-        $url         = self::$authUrl . '?client_id=' . $clientId . '&redirect_uri=' . $redirectUri . '&response_type=code&scope=follower_list';
 
-        return $url;
+        return self::$authUrl . '?client_id=' . $clientId . '&redirect_uri=' . $redirectUri . '&response_type=code&scope=follower_list';
     }
 
 
@@ -56,8 +50,7 @@ class Instagram
      */
     public static function getSelf($accessToken)
     {
-        if(!$accessToken)
-        {
+        if(!$accessToken) {
             throw new \TokenNotFoundException('Please provide a valid access token');
         }
 
