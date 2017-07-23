@@ -20,6 +20,8 @@ Once you have obtained your instagram client id place it in your .env file as:
  - INSTAGRAM_REDIRECT_URI= 
  - INSTAGRAM_CLIENT_SECRET= 
 
+once done that access the function by Instagram::functionName($params);
+
 Functions
 ---------
 To auth with this package use auth() function from your route
