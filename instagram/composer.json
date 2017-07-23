@@ -1,0 +1,15 @@
+{
+    "name": "shahrukhkhan/instagram",
+    "description": "This package provides you easy way to communicate with instagram api",
+    "type": "library",
+    "require": {
+        "guzzle/http": "^3.9"
+    },
+    "authors": [
+        {
+            "name": "Shahrukh Khan",
+            "email": "shahrukh@iamshahrukh.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
