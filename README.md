@@ -6,6 +6,10 @@ This is a simple package to provide you all the instagram API accessible at one 
 
 ----------
 
+Installation
+-------------
+
+    composer require shahrukhkhan/instagram
 
 Requirements
 -------------
