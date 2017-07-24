@@ -11,6 +11,12 @@ Installation
 
     composer require shahrukhkhan/instagram
 
+or add the following in your composer.json file require section
+
+    "require": {
+        "shahrukhkhan/instagram": "dev-master"
+        }    
+
 Requirements
 -------------
 
