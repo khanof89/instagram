@@ -30,11 +30,11 @@ once done that access the function by Instagram::functionName($params);
 
 Functions
 ---------
-To auth with this package use auth() function from your route
+To auth with this package use auth() function from your route, you may mention multiple scopes as array 
 
 ```php
 Route::get('instagram-auth', function(){
-    return redirect()->away(\Shahrukh\Instagram\Instagram::auth());
+    return redirect()->away(\Shahrukh\Instagram\Instagram::auth($scopes));
 });
 ```
 
