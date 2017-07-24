@@ -26,21 +26,25 @@ Functions
 ---------
 To auth with this package use auth() function from your route
 
-    Route::get('instagram-auth', function(){
-	    return redirect()->away(\Shahrukh\Instagram\Instagram::auth());
-    });
+```php
+Route::get('instagram-auth', function(){
+    return redirect()->away(\Shahrukh\Instagram\Instagram::auth());
+});
+```
 
 List of functions available
 ---------------------------
 
-    exchangeCodeForToken() = expects the code you received while authenticating, and gives you access token in return 
-    
-    getSelf() = gives information about logged in user
-    
-    getSelfMedia() = gives media list of logged in user
-    
-    getFollowedBy() = expects access token and user id(default is self), return the list of users who follows the user in question
-    
-    getFollows() = expects access token and user id(default is self), return the list of users, user in question follows
+```php
+exchangeCodeForToken() // expects the code you received while authenticating, and gives you access token in return 
 
-	getFollowRequest() = expects access token and user id (default is self), return the follow requests user in quesiton received
+getSelf() // gives information about logged in user
+
+getSelfMedia() // gives media list of logged in user
+
+getFollowedBy() // expects access token and user id(default is self), return the list of users who follows the user in question
+
+getFollows() // expects access token and user id(default is self), return the list of users, user in question follows
+
+getFollowRequest() // expects access token and user id (default is self), return the follow requests user in quesiton received
+```
