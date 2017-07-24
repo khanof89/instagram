@@ -4,7 +4,8 @@ namespace Shahrukh\Instagram\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class Instagram extends Facade {
+class Instagram extends Facade
+{
     /**
      * Get the binding in the IoC container
      *
